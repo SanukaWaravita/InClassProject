@@ -12,11 +12,7 @@ app.use(exp.urlencoded({ extended: true }));
 let storedUserName = '';
 app.get('/', (req, res) => {
     res.send(`
-        <h1>Enter Your Name</h1>
-        <form method="POST" action="/submit-name">
-            <input type="text" name="userName" placeholder="Your name" required />
-            <button type="submit">Show Greeting</button>
-        </form>
+        
     `);
 });
 
