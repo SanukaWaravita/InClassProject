@@ -25,3 +25,7 @@ rl.question('Enter your name: ', (name) => {
         });
     });
 });
+
+app.get('/api', (req, res) => {
+    res.json({message: "HELLO"});
+});
